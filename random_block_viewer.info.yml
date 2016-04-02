@@ -1,0 +1,6 @@
+name: Random Block Viewer
+description: View random block on each page refresh.
+package: Misc
+
+type: module
+core: 8.x

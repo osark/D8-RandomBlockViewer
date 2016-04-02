@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file Hook implemenation for random_block_viewer module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implementation of hook_help()
+ */
+function random_block_viewer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.random_block_viewer':
+      return '<p>' . t('Create an instance of RandomBlockViewer block, and choose which page and region should this block appears. From block configuration, choose which other blocks this block should randomly view on each page refresh. This block can be used to display random ads that changes between each page refresh.') . '</p>';
+  }
+}
